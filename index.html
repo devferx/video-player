@@ -6,8 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Video Player</title>
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <script src="./assets/js/main"></script>
+    <div class="container">
+      <h3 class="video-title">My first video</h3>
+      <div class="video-actions">
+        <button class="btn-video" id="back">
+          <img src="./assets/icons/back.svg" alt="back" />
+        </button>
+        <button class="btn-video hidden" id="pause">
+          <img src="./assets/icons/pause.svg" alt="pause" />
+        </button>
+        <button class="btn-video x" id="play">
+          <img src="./assets/icons/play.svg" alt="play" />
+        </button>
+        <button class="btn-video" id="forward">
+          <img src="./assets/icons/fordward.svg" alt="forward" />
+        </button>
+      </div>
+      <video
+        id="video"
+        poster="https://wallpapercave.com/wp/wp4752796.jpg"
+        src="./assets/video/test.mp4"
+      ></video>
+      <div class="video-progress">
+        <input id="progress" type="range" min="0" step="1" value="0" />
+      </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
